@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoghurtBank.Server", "Server\YoghurtBank.Server.csproj", "{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoghurtBank.Client", "Client\YoghurtBank.Client.csproj", "{250DA905-6885-44F8-A84B-788B709C278F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoghurtBank.Shared", "Shared\YoghurtBank.Shared.csproj", "{8ED0C448-7DDC-4905-803B-670B1BA45FD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|x64.Build.0 = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Debug|x86.Build.0 = Debug|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|x64.ActiveCfg = Release|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|x64.Build.0 = Release|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|x86.ActiveCfg = Release|Any CPU
+		{250DA905-6885-44F8-A84B-788B709C278F}.Release|x86.Build.0 = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|x64.Build.0 = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|x64.ActiveCfg = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|x64.Build.0 = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{74680AAF-26BD-47E4-9D5E-E52BC1F026E6}.Release|x86.Build.0 = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|x64.Build.0 = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Debug|x86.Build.0 = Debug|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|x64.ActiveCfg = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|x64.Build.0 = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|x86.ActiveCfg = Release|Any CPU
+		{8ED0C448-7DDC-4905-803B-670B1BA45FD8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E7D9742-F3A0-4E58-B718-D20107654ADB}
+	EndGlobalSection
+EndGlobal

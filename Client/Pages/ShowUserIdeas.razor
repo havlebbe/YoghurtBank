@@ -1,0 +1,67 @@
+@page "/user/ideas"
+@attribute [Authorize]
+@inject HttpClient Http
+@inject AuthenticationStateProvider auth
+
+<PageTitle>My ideas</PageTitle>
+
+@if(ideas == null || ideas.Length == 0)
+{
+    <h1>You have no ideas - get creatin'!</h1>
+}
+else 
+{
+     <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Subject</th>
+                <th>Description</th>
+                <th>Posted date</th>
+                <th>Amount of collaborators</th>
+                <th>Open</th>
+                <th>Duration</th>
+                <th>Start date</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var idea in ideas)
+            {
+                <tr>
+                    <td>@idea.Title</td>
+                    <td>@idea.Subject</td>
+                    <td>@idea.Description</td>
+                    <td>@idea.Posted</td>
+                    <td>@idea.AmountOfCollaborators</td>
+                    <td>@idea.Open</td>
+                    <td>@idea.TimeToComplete</td>
+                    <td>@idea.StartDate</td>
+                    <td>@idea.Type</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    public int? userId; //neccessary?
+    private IdeaDetailsDTO[]? ideas;
+    private User user;
+    private string Name;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        //her skal være noget logik som finder ideer frem baseret på
+        //hvem der er logget ind? 
+        var authState = await auth.GetAuthenticationStateAsync();
+        Console.WriteLine(authState.User.Identity.Name); //det her svarer til sebastian email, kan det bruges til at finde requests i db? 
+        //skal evt. bruge denne mail til at køre igennem UserValidator og få fat i et user-objekt?
+
+
+        //pt. er denne blot sat til at finde alle ideer i db
+        ideas = await Http.GetFromJsonAsync<IdeaDetailsDTO[]>($"https://localhost:7194/api/idea");
+    }
+}

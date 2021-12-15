@@ -1,0 +1,87 @@
+@page "/projects"
+@attribute [Authorize]
+@using YoghurtBank.Shared.Services;
+@using YoghurtBank.Infrastructure;
+@using YoghurtBank.Server.Controllers
+@using YoghurtBank.Shared.Model;
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<PageTitle>Projects</PageTitle>
+
+<h1>List of open projects</h1>
+
+<span style="display:inline-block; width: 500;"></span>
+
+<h1>@ideas</h1>
+<h1>@requests</h1>
+
+@if(ideas == null)
+{
+    <h1>Listen er tom brothr</h1>
+}
+else {
+    @foreach (var idea in ideas){
+    <h3> @idea.Title</h3>
+    <h2> @idea.Subject </h2>
+    <p> @idea.Description </p>
+}
+}
+
+
+
+@if(requests == null)
+{
+    <h1>Requests er tom brothr</h1>
+}
+else 
+{
+    @foreach (var request in requests){
+    <h3> @request.Application</h3>
+    <h2> @request.Status </h2>
+    <p> blenis </p>
+}}
+
+
+<h3><a href="project1">Dette er en test </a></h3>
+
+<p>bliver i daglig tale tit identificeret med det medie, de fremstår i, og som sådan er begrebet 
+    en meget flertydig størrelse. En tekst er her f.eks. en bog, et brev eller en avis. Den kan 
+    også være en del af en større tekst, f.eks. en nærmere afgrænset del af bogen (i forskellige 
+    former for antologier og samlinger) et bestemt afsnit i brevet (eller f.eks. et bilag til brevet) 
+    eller en enkelt artikel i avisen.</p>
+
+<span style="display:inline-block; width: 150;"></span>    
+
+<h3><a href="project2">Dette er en test </a></h3>
+
+<p>bliver i daglig tale tit identificeret med det medie, de fremstår i, og som sådan er begrebet 
+    en meget flertydig størrelse. En tekst er her f.eks. en bog, et brev eller en avis. Den kan 
+    også være en del af en større tekst, f.eks. en nærmere afgrænset del af bogen (i forskellige 
+    former for antologier og samlinger) et bestemt afsnit i brevet (eller f.eks. et bilag til brevet) 
+    eller en enkelt artikel i avisen.</p>
+
+<span style="display:inline-block; width: 150;"></span>      
+
+<h3><a href="project3">Dette er en test </a></h3>
+
+<p>bliver i daglig tale tit identificeret med det medie, de fremstår i, og som sådan er begrebet 
+    en meget flertydig størrelse. En tekst er her f.eks. en bog, et brev eller en avis. Den kan 
+    også være en del af en større tekst, f.eks. en nærmere afgrænset del af bogen (i forskellige 
+    former for antologier og samlinger) et bestemt afsnit i brevet (eller f.eks. et bilag til brevet) 
+    eller en enkelt artikel i avisen.</p>
+
+<span style="display:inline-block; width: 150;"></span>    
+
+@code {
+    
+    private IdeaDetailsDTO[]? ideas;
+    private CollaborationRequestDetailsDTO[]? requests;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //nu virker det her, men hvorfor skal hele path på? kan man sætte en basepath et sted?
+        ideas = await Http.GetFromJsonAsync<IdeaDetailsDTO[]>("https://localhost:7194/api/idea");
+        requests = await Http.GetFromJsonAsync<CollaborationRequestDetailsDTO[]>("https://localhost:7194/api/collaborationrequest");
+    }
+}
