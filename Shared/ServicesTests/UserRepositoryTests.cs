@@ -2,7 +2,6 @@ using Xunit;
 using YoghurtBank.Shared.Services;
 using YoghurtBank.Infrastructure;
 using YoghurtBank.Shared.Model;
-using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
