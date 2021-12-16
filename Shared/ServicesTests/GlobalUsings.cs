@@ -23,5 +23,4 @@ global using Microsoft.Identity.Web.Resource;
 global using YoghurtBank.Shared.Infrastructure;
 global using YoghurtBank.Shared.Services;
 global using YoghurtBank.Shared.Model;
-global using YoghurtBank.Server.Controllers;
 

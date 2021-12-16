@@ -18,6 +18,8 @@ global using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Identity.Web.Resource;
+global using Microsoft.Identity.Web;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 global using YoghurtBank.Shared.Infrastructure;
 global using YoghurtBank.Shared.Services;

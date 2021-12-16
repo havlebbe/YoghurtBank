@@ -1,6 +1,6 @@
 
 using Xunit;
-using YoghurtBank.Infrastructure;
+using YoghurtBank.Shared.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

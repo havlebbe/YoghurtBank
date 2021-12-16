@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using YoghurtBank.Infrastructure;
+using YoghurtBank.Shared.Infrastructure;
+using Microsoft.Extensions.Hosting;
 
 namespace YoghurtBank.Shared.Model
 {

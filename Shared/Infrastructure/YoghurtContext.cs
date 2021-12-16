@@ -1,5 +1,5 @@
 
-namespace YoghurtBank.Infrastructure
+namespace YoghurtBank.Shared.Infrastructure
 {
     public class YoghurtContext : DbContext, IYoghurtContext
     {

@@ -1,5 +1,5 @@
 using YoghurtBank.Shared.Model;
-using YoghurtBank.Infrastructure;
+using YoghurtBank.Shared.Infrastructure;
 using Xunit;
 using YoghurtBank.Shared.Services;
 using Microsoft.EntityFrameworkCore;
