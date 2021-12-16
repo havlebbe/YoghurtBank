@@ -9,6 +9,7 @@ global using System.Reflection.Emit;
 
 global using Moq;
 global using Xunit;
+global using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Http;
